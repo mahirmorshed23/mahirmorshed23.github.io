@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="port.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo"> << Portfolio >> </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#tech">TechStack</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="home" id="home">
+        <div class="container">
+            <div class="profile-area">
+                <div class="image-wrapper">
+                    <img src="Images/Profile.jpeg" alt="Profile" class="profile-img shield-shape">
+                    <div class="glow-backdrop shield-shape"></div>
+                </div>
+            </div>
+            <div class="content">
+                <h1>I'm <span class="gradient-text">Mahir</span>,<br></h1>
+                <h2><span id="typewriter"></span><span class="cursor">&nbsp;</span></h2><br>
+                <p>I build, train, and deploy intelligent systems.</p>
+                <a href="#projects"><button class="cta-btn">See My Works</button></a>
+            </div>
+        </div>
+    </section>
+
+
+  <!-- PROJECTS -->
+  <section class="projects reveal" id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>Short description of what this project does.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>Short description of what this project does.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Three</h3>
+        <p>Short description of what this project does.</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="tech-hybrid" id="tech">
+    <h2>Tech Stack</h2>
+
+    <div class="hybrid-grid">
+
+        <!-- TERMINAL SIDE -->
+        <div class="tech-terminal reveal">
+        <div class="terminal-header">
+            <span></span><span></span><span></span>
+        </div>
+
+        <pre class="terminal-body">
+            $ whoami
+            > CSE Student | AI Explorer
+
+            $ stack --core
+            > Python, C++, JavaScript
+
+            $ stack --ai
+            > Machine Learning
+            > Neural Networks
+            > Computer Vision
+
+            $ stack --systems
+            > Windows, Linux
+        </pre>
+        </div>
+
+        <!-- AI MODULES SIDE -->
+        <div class="ai-modules reveal">
+            <div class="ai-card">
+                <h3>Languages</h3>
+                <p>C, C++<br>Java<br>Python<br></p>
+            </div>
+            <div class="ai-card">
+                <h3>AI & ML</h3>
+                <p>ML Algorithms<br>Neural Networks<br>Model Optimization</p>
+            </div>
+
+            <div class="ai-card">
+                <h3>Computer Vision</h3>
+                <p>OpenCV<br>Image Processing<br>Webcam Pipelines</p>
+            </div>
+
+            <div class="ai-card">
+                <h3>App Development</h3>
+                <p>Android Studio<br>Tensorflow Lite<br>Kotlin<br>Java</p>
+            </div>
+        </div>
+
+    </div>
+  </section>
+
+
+
+  <section class="about reveal" id="about">
+    <h2>About Me</h2>
+
+    <p>
+        I'm <strong>Mahir Morshed</strong>, a Computer Science student passionate about building intelligent systems and mobile applications.
+        I enjoy combining <span class="highlight">AI & Machine Learning</span> with practical software development to solve real-world problems.
+    </p>
+
+    <p>
+        My toolkit spans <span class="highlight">Python, C++, Java, Kotlin</span>, and frameworks like <span class="highlight">TensorFlow, OpenCV, Android Studio</span>.
+        I love optimizing models for low-resource environments and creating smooth, responsive applications for both desktop and mobile.
+    </p>
+
+    <p>
+        When I'm not coding, I explore robotics, experiment with hardware projects, and dive into cutting-edge AI research.  
+        My goal: turn ideas into functioning, intelligent software that makes life easier and more exciting.
+    </p>
+
+    <div class="skills">
+        <div class="skill">AI / ML</div>
+        <div class="skill">Android Development</div>
+        <div class="skill">Computer Vision</div>
+        <div class="skill">Python / C++ / Java</div>
+        <div class="skill">Linux & Git</div>
+        <div class="skill">Robotics & Arduino</div>
+    </div>
+    </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact reveal" id="contact">
+    <h2>Contact</h2>
+    <p>
+      Want to work together or just say hi?
+      Feel free to reach out.
+    </p>
+    <a href="mailto:mahirmorshed005@gmail.com"><button class="cta-btn">Email Me</button></a>
+  </section>
+
+  <footer>
+    Built with ❤️, Linux, and caffeine ☕ | © Mahir
+  </footer>
+
+
+  <script src="port.js"></script>
+</body>
+</html>
