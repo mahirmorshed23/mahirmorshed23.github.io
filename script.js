@@ -1,13 +1,24 @@
 
 // Scroll reveal animation
-const reveals = document.querySelectorAll('.reveal');
+const reveals_left = document.querySelectorAll('.reveal_left');
+const reveals_right = document.querySelectorAll('.reveal_right');
 
 function revealOnScroll() {
-    const trigger = window.innerHeight * 0.85;
-    reveals.forEach(el => {
+    const trigger = window.innerHeight * 0.99;
+    reveals_left.forEach((el, index) => {
     const top = el.getBoundingClientRect().top;
     if (top < trigger) {
-        el.classList.add('active');
+        setTimeout(() => {
+            el.classList.add('active');
+        }, 100*(index%5))
+    }
+    });
+    reveals_right.forEach((el, index) => {
+    const top = el.getBoundingClientRect().top;
+    if (top < trigger) {
+        setTimeout(() => {
+            el.classList.add('active');
+        }, 100*(index%5))
     }
     });
 }
@@ -18,7 +29,7 @@ revealOnScroll();
 
 
 
-
+// WHO AM I ----------------------
 const words = ["AI/ML Engineer", "Software Developer", "App Developer"];
     let wordIndex = 0;
     let charIndex = 0;
@@ -54,3 +65,14 @@ const words = ["AI/ML Engineer", "Software Developer", "App Developer"];
     document.addEventListener("DOMContentLoaded", () => {
         setTimeout(type, 1000);
     });
+
+
+
+function showsidebar() {
+    const sidebar = document.querySelector(".sidebar")
+    sidebar.style.display = 'flex'
+}
+function hidesidebar() {
+    const sidebar = document.querySelector(".sidebar")
+    sidebar.style.display = 'none'
+}
